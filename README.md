@@ -1,6 +1,6 @@
 # Functional SNP Identification and scRNA-STARR-seq Integration Analysis
 
-## 📌 Overview
+## Overview
 
 This repository contains the analysis scripts used in our study for:
 
@@ -11,21 +11,10 @@ This repository contains the analysis scripts used in our study for:
 
 The workflow combines bulk sequencing (STARR-seq / SNP counts) and single-cell transcriptomic data to characterize regulatory variants.
 
----
-
-## 📂 Repository Structure
-
-```
-.
-├── python_scripts.ipynb        # SNP extraction and preprocessing
-├── R_scripts.ipynb            # Statistical analysis and visualization
-├── scRNA_starr_seq.ipynb      # Single-cell integration analysis
-└── README.md
-```
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 ### Python
 
@@ -49,8 +38,6 @@ The workflow combines bulk sequencing (STARR-seq / SNP counts) and single-cell t
 * samtools (mpileup)
 
 ---
-
-## 🧬 Workflow Description
 
 ### 1️⃣ SNP Extraction and Processing (`python_scripts.ipynb`)
 
@@ -160,42 +147,6 @@ samtools mpileup \
 
 ---
 
-## 📊 Key Outputs
-
-* `snp_info.tsv`: filtered SNP dataset
-* `*_selected_*.tsv`: selected functional SNPs
-* `*.bed`: genomic regions for downstream analysis
-* `M18_overlap.png`: method comparison
-* scRNA clustering and marker genes
-
----
-
-## ⚠️ Notes
-
-* File paths in scripts are **absolute paths** and need to be modified
-* Some intermediate files are not included in this repository
-* Duplicate reads are not removed at SNP counting stage
-
----
-
-## 🚀 Reproducibility Tips
-
-1. Update all file paths to your local environment
-2. Ensure BAM and reference genome are consistent
-3. Run workflow in order:
-
-   1. Python SNP processing
-   2. R statistical analysis
-   3. scRNA integration
-
----
-
-## 📬 Contact
-
-For questions or collaboration, please contact the author.
-
----
-
-## 📖 Citation
+## Citation
 
 If you use this code, please cite our paper (to be added).
