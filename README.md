@@ -65,16 +65,6 @@ samtools mpileup \
 
 * Compare **new vs old method**
 * Calculate LFC differences
-* Select:
-
-  * top (high effect)
-  * middle
-  * low effect SNPs
-
-#### Step 4: Generate BED file
-
-* Extend ±50 bp around SNP
-* Output for downstream analysis
 
 ---
 
@@ -84,10 +74,7 @@ samtools mpileup \
 
 * Based on count matrices
 * Using DESeq2-like framework
-* Thresholds:
 
-  * FDR < 0.05
-  * |log2FC| > 0.585
 
 #### Visualization
 
